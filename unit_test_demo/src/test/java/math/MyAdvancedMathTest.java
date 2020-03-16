@@ -1,4 +1,6 @@
 package demo.junit_class_demo.math;
+import demo.junit_class_demo.grades.HistogramGenerator;
+import demo.junit_class_demo.grades.ChartIO;
 
 import org.junit.Assert;
 import org.junit.Rule;
@@ -20,7 +22,7 @@ public class MyAdvancedMathTest {
 	 * A reference to the MyAdvancedMath class
 	 * whose methods we are testing in this class
 	 */
-	MyAdvancedMath mam ;
+	MyAdvancedMath mam =new MyAdvancedMath();
 	
 	/*
 	 * This is a constructor which is called 
@@ -28,6 +30,35 @@ public class MyAdvancedMathTest {
 	 */
 	public MyAdvancedMathTest() {
 		
+	}
+	public void toplama(){
+		Assert.assertEquals(10,mam.add(2,8));
+	}
+
+	@Test (expected = IllegalArgumentException.class)
+	public void integersinirasma() {
+		mam.add(2000000000,2000000000);
+	}
+
+	@Test (expected = IllegalArgumentException.class)
+	public void negativevalues() {
+		mam.add(1,-2);
+	}
+	@Test
+	public void geneltest(){
+		Assert.assertEquals(32,mam.powerOfTwo(5));
+	}
+	@Test
+	public void sıfırkuvvet(){
+		Assert.assertEquals(1,mam.powerOfTwo(0));
+	}
+	@Test (expected = IllegalArgumentException.class)
+	public void sinir1() {
+		mam.powerOfTwo(44);
+	}
+	@Test (expected = IllegalArgumentException.class)
+	public void sinir2() {
+		mam.powerOfTwo(-2);
 	}
 	
 
@@ -77,6 +108,7 @@ public class MyAdvancedMathTest {
 	 */
 	@Test
 	public void test_reverseArray_Mocking() {
+
 
 
 	}

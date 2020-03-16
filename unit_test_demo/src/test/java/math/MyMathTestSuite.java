@@ -1,5 +1,6 @@
 package demo.junit_class_demo.math;
-
+import  demo.junit_class_demo.math.MyMathTest;
+import  demo.junit_class_demo.math.MyAdvancedMathTest;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 

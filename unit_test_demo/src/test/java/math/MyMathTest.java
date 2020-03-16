@@ -14,22 +14,27 @@ import org.junit.Assert;
  */
 public class MyMathTest {
 	MyMath mm = new MyMath();
-	
-	/*
-	 * A unit test that checks a valid positive input
-	 */
+
     @Test
     public void testGetSignShouldReturnPositive() {
-    	
+    	    Assert.assertEquals("positive",mm.checkSign(1));
     }
-    
-    /*
-	 * A unit test that checks a valid negative input
-	 */
+
     @Test
     public void testGetSignShouldReturnNegative() {
-
+        Assert.assertEquals("negative",mm.checkSign(-1));
     }
+
+    @Test (expected = IllegalArgumentException.class)
+    public void exceptionkontrolmymath (){
+        mm.checkSign(0);
+    }
+
+    @Test
+    public void reversetest(){
+        Assert.assertEquals(-1, mm.reverseNumber(1));
+    }
+
     
     
 }

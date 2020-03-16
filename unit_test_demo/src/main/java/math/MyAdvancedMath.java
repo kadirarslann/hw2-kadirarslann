@@ -1,5 +1,5 @@
 package demo.junit_class_demo.math;
-
+import  demo.junit_class_demo.math.MyMath;
 /**
  * An class that provides some "advanced" math operations
  * for demonstrating Unit Testing.

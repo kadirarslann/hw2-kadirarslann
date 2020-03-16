@@ -1,5 +1,7 @@
 package demo.junit_class_demo.grades;
 
+import demo.junit_class_demo.grades.ChartIO;
+
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.JFreeChart;
 import org.jfree.chart.plot.PlotOrientation;
@@ -7,7 +9,7 @@ import org.jfree.data.xy.XYSeries;
 import org.jfree.data.xy.XYSeriesCollection;
 
 public class HistogramGenerator {
-	private ChartIO utils; 
+	private ChartIO utils;
 	
 	public HistogramGenerator(ChartIO utils) {
 		this.utils = utils;
@@ -30,7 +32,7 @@ public class HistogramGenerator {
 		return frequencies;
 	}
 	
-	public JFreeChart createChart(int[] frequencies) {
+	public JFreeChart  createChart(int[] frequencies) {
 		/*
 		 * The XYSeriesCollection object is a set XYSeries series (dataset) that can be
 		 * visualized in the same chart
