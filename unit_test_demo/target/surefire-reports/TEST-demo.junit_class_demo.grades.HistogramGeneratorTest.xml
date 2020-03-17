@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="0" name="demo.junit_class_demo.math.MyMathTest" time="0.008" errors="0" skipped="0">
+<testsuite tests="3" failures="0" name="demo.junit_class_demo.grades.HistogramGeneratorTest" time="1.058" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.6+10-post-Ubuntu-1ubuntu118.04.1"/>
@@ -61,8 +61,7 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="demo.junit_class_demo.math.MyMathTest" name="exceptionkontrolmymath" time="0.001"/>
-  <testcase classname="demo.junit_class_demo.math.MyMathTest" name="testGetSignShouldReturnPositive" time="0.002"/>
-  <testcase classname="demo.junit_class_demo.math.MyMathTest" name="testGetSignShouldReturnNegative" time="0.004"/>
-  <testcase classname="demo.junit_class_demo.math.MyMathTest" name="reversetest" time="0.001"/>
+  <testcase classname="demo.junit_class_demo.grades.HistogramGeneratorTest" name="test_generate_normal" time="0"/>
+  <testcase classname="demo.junit_class_demo.grades.HistogramGeneratorTest" name="test1" time="0"/>
+  <testcase classname="demo.junit_class_demo.grades.HistogramGeneratorTest" name="test2" time="1.058"/>
 </testsuite>

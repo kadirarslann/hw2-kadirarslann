@@ -31,15 +31,20 @@ public class MyAdvancedMathTest {
 	public MyAdvancedMathTest() {
 		
 	}
-	public void toplama(){
+	@Test
+	public void toplama1(){
 		Assert.assertEquals(10,mam.add(2,8));
 	}
 
 	@Test (expected = IllegalArgumentException.class)
 	public void integersinirasma() {
-		mam.add(2000000000,2000000000);
+		int i1=2000000000; int i2=1000000000;
+		mam.add(i1,i2);
 	}
-
+	@Test (expected = IllegalArgumentException.class)
+	public void negativevalues2() {
+		mam.add(-3,1);
+	}
 	@Test (expected = IllegalArgumentException.class)
 	public void negativevalues() {
 		mam.add(1,-2);
@@ -96,7 +101,8 @@ public class MyAdvancedMathTest {
 	 */
 	@Test
 	public void test_reverseArray() {
-
+		MyMath op=new MyMath();
+		Assert.assertArrayEquals(new int[]{-3,-2,-1,3,2,1},mam.reverseArray(new int[]{3,2,1,-3,-2,-1},op));
 	}
 	
 	/*
@@ -108,8 +114,12 @@ public class MyAdvancedMathTest {
 	 */
 	@Test
 	public void test_reverseArray_Mocking() {
+		MyMath op=mock(MyMath.class);
+		when(op.reverseNumber(1)).thenReturn(-1);  when(op.reverseNumber(2)).thenReturn(-2);
+		when(op.reverseNumber(3)).thenReturn(-3);  when(op.reverseNumber(4)).thenReturn(-4);
+		when(op.reverseNumber(5)).thenReturn(-5);  when(op.reverseNumber(6)).thenReturn(-6);
 
-
-
+		int[] arr={1,2,3,4,5,6};
+		Assert.assertArrayEquals(new int[]{-1,-2,-3,-4,-5,-6},new MyAdvancedMath().reverseArray(arr,op));
 	}
 }
