@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="3" failures="0" name="demo.junit_class_demo.grades.HistogramGeneratorTest" time="1.058" errors="0" skipped="0">
+<testsuite tests="4" failures="0" name="demo.junit_class_demo.grades.HistogramGeneratorTest" time="2.026" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.6+10-post-Ubuntu-1ubuntu118.04.1"/>
@@ -63,5 +63,6 @@
   </properties>
   <testcase classname="demo.junit_class_demo.grades.HistogramGeneratorTest" name="test_generate_normal" time="0"/>
   <testcase classname="demo.junit_class_demo.grades.HistogramGeneratorTest" name="test1" time="0"/>
-  <testcase classname="demo.junit_class_demo.grades.HistogramGeneratorTest" name="test2" time="1.058"/>
+  <testcase classname="demo.junit_class_demo.grades.HistogramGeneratorTest" name="test2" time="0.982"/>
+  <testcase classname="demo.junit_class_demo.grades.HistogramGeneratorTest" name="test3" time="1.044"/>
 </testsuite>

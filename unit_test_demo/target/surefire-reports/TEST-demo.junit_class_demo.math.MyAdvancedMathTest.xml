@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="10" failures="0" name="demo.junit_class_demo.math.MyAdvancedMathTest" time="1.666" errors="0" skipped="0">
+<testsuite tests="10" failures="0" name="demo.junit_class_demo.math.MyAdvancedMathTest" time="0.076" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.6+10-post-Ubuntu-1ubuntu118.04.1"/>
@@ -61,14 +61,14 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="demo.junit_class_demo.math.MyAdvancedMathTest" name="negativevalues2" time="0.002"/>
-  <testcase classname="demo.junit_class_demo.math.MyAdvancedMathTest" name="negativevalues" time="0.001"/>
-  <testcase classname="demo.junit_class_demo.math.MyAdvancedMathTest" name="test_reverseArray" time="0.001"/>
-  <testcase classname="demo.junit_class_demo.math.MyAdvancedMathTest" name="toplama1" time="0.001"/>
-  <testcase classname="demo.junit_class_demo.math.MyAdvancedMathTest" name="sinir1" time="0.001"/>
-  <testcase classname="demo.junit_class_demo.math.MyAdvancedMathTest" name="sinir2" time="0"/>
+  <testcase classname="demo.junit_class_demo.math.MyAdvancedMathTest" name="negativevalues2" time="0"/>
+  <testcase classname="demo.junit_class_demo.math.MyAdvancedMathTest" name="negativevalues" time="0"/>
+  <testcase classname="demo.junit_class_demo.math.MyAdvancedMathTest" name="test_reverseArray" time="0"/>
+  <testcase classname="demo.junit_class_demo.math.MyAdvancedMathTest" name="toplama1" time="0.002"/>
+  <testcase classname="demo.junit_class_demo.math.MyAdvancedMathTest" name="sinir1" time="0"/>
+  <testcase classname="demo.junit_class_demo.math.MyAdvancedMathTest" name="sinir2" time="0.001"/>
   <testcase classname="demo.junit_class_demo.math.MyAdvancedMathTest" name="integersinirasma" time="0"/>
   <testcase classname="demo.junit_class_demo.math.MyAdvancedMathTest" name="sıfırkuvvet" time="0.001"/>
   <testcase classname="demo.junit_class_demo.math.MyAdvancedMathTest" name="geneltest" time="0"/>
-  <testcase classname="demo.junit_class_demo.math.MyAdvancedMathTest" name="test_reverseArray_Mocking" time="1.659"/>
+  <testcase classname="demo.junit_class_demo.math.MyAdvancedMathTest" name="test_reverseArray_Mocking" time="0.072"/>
 </testsuite>
